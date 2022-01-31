@@ -11,7 +11,6 @@ def callback(data):
 	cloud_points = list(pc2.read_points(data, skip_nans=True, field_names = ("x", "y", "z")))
 	plot_coordinates(cloud_points)
 
-
 def plot_coordinates(points):
 	x, y, z = zip(*points)
 	create_occupancy_grid(x,y,z)
